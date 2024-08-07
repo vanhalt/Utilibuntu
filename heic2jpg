@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for file in ~/photos/*; do
+    convert $file -quality 50 ${file%.HEIC}.jpg
+done

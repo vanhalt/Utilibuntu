@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for file in ~/photos/*.{jpg,jpeg}; do
+    [ -f "$file" ] || break
+    exif --remove $file --output=${file%.jpg}-web.jpg
+done
