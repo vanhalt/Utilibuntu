@@ -13,3 +13,4 @@ services:
       context: .
     volumes:
       - ./photos:/home/vanhalt/photos
+      - ./videos:/home/vanhalt/videos
